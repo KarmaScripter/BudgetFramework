@@ -1,0 +1,114 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <StartupObject>BudgetFramework.App</StartupObject>
+    <ApplicationIcon>Resources\Images\Ninja\BudExNinjaGrey.ico</ApplicationIcon>
+    <PackageIcon>BudExNinja.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\Images\Ninja\BudExNinjaGrey.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\Adapter\" />
+    <Folder Include="Data\Command\" />
+    <Folder Include="Data\Connection\" />
+    <Folder Include="Data\DataMap\" />
+    <Folder Include="Data\DataBuilder\" />
+    <Folder Include="Data\Database\" />
+    <Folder Include="Data\Conversion\" />
+    <Folder Include="Data\DataWorker\" />
+    <Folder Include="Data\Query\" />
+    <Folder Include="Data\SqlStatement\" />
+    <Folder Include="Enumerations\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="IO\" />
+    <Folder Include="Excel\" />
+    <Folder Include="Libraries\" />
+    <Folder Include="Ninja\" />
+    <Folder Include="Resources\Documents\" />
+    <Folder Include="Resources\Reports\" />
+    <Folder Include="Static\" />
+  </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="EPPlus" Version="6.1.1" />
+        <PackageReference Include="log4net" Version="2.0.15" />
+        <PackageReference Include="Syncfusion.Grid.WPF" Version="20.3.0.58" />
+        <PackageReference Include="Syncfusion.SfGrid.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.Shared.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.SfChart.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.SfBulletGraph.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.SfDiagram.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.SfMaps.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.Tools.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.Shared.Base" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.SfSpreadsheet.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.SfProgressBar.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.DocIO.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.Pdf.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.PdfViewer.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.Presentation.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.XlsIO.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.Gantt.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.SfGauge.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.Shared.MVVM.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.SfScheduler.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.SfInput.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.SfColorPalette.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.SfImageEditor.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.SfKanban.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.SfRadialMenu.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.SfRichTextBoxAdv.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.SfRichTextRibbon.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.SfNavigationDrawer.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.SfTreeNavigator.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.SfTreeView.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.SfAccordion.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.SfChromelessWindow.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.SfTextInputLayout.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.SfBusyIndicator.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.SfHubTile.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.SfBarcode.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.Calculate.Base" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.PropertyGrid.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.SfSpellChecker.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.Edit.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.SfTreeMap.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.SfHeatMap.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.SfSmithChart.WPF" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.Themes.MaterialDark.Wpf" Version="20.3.0.58" />
+    <PackageReference Include="Syncfusion.SfSkinManager.Wpf" Version="20.3.0.58" />
+    <PackageReference Include="System.Data.OleDb" Version="7.0.0" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.116" />
+</ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="System.Data.SqlServerCe">
+        <HintPath>Libraries\System.Data.SqlServerCe.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="LICENSE">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
+      <None Update="README.md">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
+      <None Update="Resources\Images\Ninja\png\BudExNinja.png">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
+    </ItemGroup>
+</Project>

@@ -1,0 +1,269 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\terry\\source\\repos\\BudgetFramework\\BudgetFramework.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\terry\\source\\repos\\BudgetFramework\\BudgetFramework.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\terry\\source\\repos\\BudgetFramework\\BudgetFramework.csproj",
+        "projectName": "BudgetFramework",
+        "projectPath": "C:\\Users\\terry\\source\\repos\\BudgetFramework\\BudgetFramework.csproj",
+        "packagesPath": "C:\\Users\\terry\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\terry\\source\\repos\\BudgetFramework\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Syncfusion\\Essential Studio\\WPF\\20.3.0.47\\ToolboxNuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\terry\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Syncfusion Toolbox for WPF.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files (x86)\\Syncfusion\\Essential Studio\\WinUI\\20.3.0.47\\NuGetPackages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "EPPlus": {
+              "target": "Package",
+              "version": "[6.1.1, )"
+            },
+            "Syncfusion.Calculate.Base": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.DocIO.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.Edit.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.Gantt.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.Grid.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.Pdf.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.PdfViewer.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.Presentation.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.PropertyGrid.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.SfAccordion.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.SfBarcode.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.SfBulletGraph.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.SfBusyIndicator.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.SfChart.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.SfChromelessWindow.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.SfColorPalette.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.SfDiagram.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.SfGauge.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.SfGrid.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.SfHeatMap.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.SfHubTile.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.SfImageEditor.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.SfInput.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.SfKanban.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.SfMaps.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.SfNavigationDrawer.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.SfProgressBar.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.SfRadialMenu.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.SfRichTextBoxAdv.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.SfRichTextRibbon.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.SfScheduler.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.SfSkinManager.Wpf": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.SfSmithChart.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.SfSpellChecker.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.SfSpreadsheet.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.SfTextInputLayout.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.SfTreeMap.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.SfTreeNavigator.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.SfTreeView.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.Shared.Base": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.Shared.MVVM.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.Shared.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.Themes.MaterialDark.Wpf": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.Tools.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "Syncfusion.XlsIO.WPF": {
+              "target": "Package",
+              "version": "[20.3.0.58, )"
+            },
+            "System.Data.OleDb": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.116, )"
+            },
+            "log4net": {
+              "target": "Package",
+              "version": "[2.0.15, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
