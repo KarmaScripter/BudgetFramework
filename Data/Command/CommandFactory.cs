@@ -1,5 +1,5 @@
-﻿// <copyright file = "CommandFactory.cs" company = "Terry D. Eppler">
-// Copyright (c) Terry D. Eppler. All rights reserved.
+﻿// <copyright file=" <File Name> .cs" company="Terry D. Eppler">
+// Copyright (c) Terry Eppler. All rights reserved.
 // </copyright>
 
 namespace BudgetFramework
@@ -74,6 +74,7 @@ namespace BudgetFramework
                 try
                 {
                     var _sql = $"CREATE TABLE {tableName}";
+
                     if( Enum.IsDefined( typeof( Provider ), Provider )
                        && !string.IsNullOrEmpty( _sql ) )
                     {
@@ -83,23 +84,20 @@ namespace BudgetFramework
                             {
                                 return !string.IsNullOrEmpty( _sql )
                                     ? new SQLiteCommand( _sql )
-                                    : default( SQLiteCommand );
+                                    : default;
                             }
-
                             case Provider.SqlCe:
                             {
                                 return !string.IsNullOrEmpty( _sql )
                                     ? new SqlCeCommand( _sql )
-                                    : default( SqlCeCommand );
+                                    : default;
                             }
-
                             case Provider.SqlServer:
                             {
                                 return !string.IsNullOrEmpty( _sql )
                                     ? new SqlCommand( _sql )
-                                    : default( SqlCommand );
+                                    : default;
                             }
-
                             case Provider.Excel:
                             case Provider.CSV:
                             case Provider.Access:
@@ -107,7 +105,7 @@ namespace BudgetFramework
                             {
                                 return !string.IsNullOrEmpty( _sql )
                                     ? new OleDbCommand( _sql )
-                                    : default( OleDbCommand );
+                                    : default;
                             }
                         }
                     }
@@ -115,11 +113,11 @@ namespace BudgetFramework
                 catch( Exception ex )
                 {
                     Fail( ex );
-                    return default( DbCommand );
+                    return default;
                 }
             }
 
-            return default( DbCommand );
+            return default;
         }
 
         /// <summary>
@@ -139,22 +137,21 @@ namespace BudgetFramework
                 try
                 {
                     var _sql = $"CREATE VIEW {viewName};";
+
                     switch( Provider )
                     {
                         case Provider.SQLite:
                         {
                             return !string.IsNullOrEmpty( _sql )
                                 ? new SQLiteCommand( _sql )
-                                : default( SQLiteCommand );
+                                : default;
                         }
-
                         case Provider.SqlServer:
                         {
                             return !string.IsNullOrEmpty( _sql )
                                 ? new SqlCommand( _sql )
-                                : default( SqlCommand );
+                                : default;
                         }
-
                         case Provider.Excel:
                         case Provider.CSV:
                         case Provider.Access:
@@ -162,18 +159,18 @@ namespace BudgetFramework
                         {
                             return !string.IsNullOrEmpty( _sql )
                                 ? new OleDbCommand( _sql )
-                                : default( OleDbCommand );
+                                : default;
                         }
                     }
                 }
                 catch( Exception ex )
                 {
                     Fail( ex );
-                    return default( DbCommand );
+                    return default;
                 }
             }
 
-            return default( DbCommand );
+            return default;
         }
 
         /// <summary>
@@ -189,6 +186,7 @@ namespace BudgetFramework
                 try
                 {
                     var _sql = $"DROP TABLE {dataTable.TableName};";
+
                     if( !string.IsNullOrEmpty( _sql )
                        && Enum.IsDefined( typeof( Provider ), Provider ) )
                     {
@@ -198,23 +196,20 @@ namespace BudgetFramework
                             {
                                 return !string.IsNullOrEmpty( _sql )
                                     ? new SQLiteCommand( _sql )
-                                    : default( SQLiteCommand );
+                                    : default;
                             }
-
                             case Provider.SqlCe:
                             {
                                 return !string.IsNullOrEmpty( _sql )
                                     ? new SqlCeCommand( _sql )
-                                    : default( SqlCeCommand );
+                                    : default;
                             }
-
                             case Provider.SqlServer:
                             {
                                 return !string.IsNullOrEmpty( _sql )
                                     ? new SqlCommand( _sql )
-                                    : default( SqlCommand );
+                                    : default;
                             }
-
                             case Provider.Excel:
                             case Provider.CSV:
                             case Provider.Access:
@@ -222,7 +217,7 @@ namespace BudgetFramework
                             {
                                 return !string.IsNullOrEmpty( _sql )
                                     ? new OleDbCommand( _sql )
-                                    : default( OleDbCommand );
+                                    : default;
                             }
                         }
                     }
@@ -230,11 +225,11 @@ namespace BudgetFramework
                 catch( Exception ex )
                 {
                     Fail( ex );
-                    return default( DbCommand );
+                    return default;
                 }
             }
 
-            return default( DbCommand );
+            return default;
         }
 
         /// <summary>
@@ -263,23 +258,20 @@ namespace BudgetFramework
                             {
                                 return !string.IsNullOrEmpty( _sql )
                                     ? new SQLiteCommand( _sql )
-                                    : default( SQLiteCommand );
+                                    : default;
                             }
-
                             case Provider.SqlCe:
                             {
                                 return !string.IsNullOrEmpty( _sql )
                                     ? new SqlCeCommand( _sql )
-                                    : default( SqlCeCommand );
+                                    : default;
                             }
-
                             case Provider.SqlServer:
                             {
                                 return !string.IsNullOrEmpty( _sql )
                                     ? new SqlCommand( _sql )
-                                    : default( SqlCommand );
+                                    : default;
                             }
-
                             case Provider.Excel:
                             case Provider.CSV:
                             case Provider.Access:
@@ -287,7 +279,7 @@ namespace BudgetFramework
                             {
                                 return !string.IsNullOrEmpty( _sql )
                                     ? new OleDbCommand( _sql )
-                                    : default( OleDbCommand );
+                                    : default;
                             }
                         }
                     }
@@ -295,11 +287,11 @@ namespace BudgetFramework
                 catch( Exception ex )
                 {
                     Fail( ex );
-                    return default( DbCommand );
+                    return default;
                 }
             }
 
-            return default( DbCommand );
+            return default;
         }
 
         /// <summary>
@@ -317,6 +309,7 @@ namespace BudgetFramework
                 try
                 {
                     var _sql = $"ALTER TABLE {dataTable.TableName} RENAME {name};";
+
                     if( Enum.IsDefined( typeof( Provider ), Provider )
                        && !string.IsNullOrEmpty( _sql ) )
                     {
@@ -326,23 +319,20 @@ namespace BudgetFramework
                             {
                                 return !string.IsNullOrEmpty( _sql )
                                     ? new SQLiteCommand( _sql )
-                                    : default( SQLiteCommand );
+                                    : default;
                             }
-
                             case Provider.SqlCe:
                             {
                                 return !string.IsNullOrEmpty( _sql )
                                     ? new SqlCeCommand( _sql )
-                                    : default( SqlCeCommand );
+                                    : default;
                             }
-
                             case Provider.SqlServer:
                             {
                                 return !string.IsNullOrEmpty( _sql )
                                     ? new SqlCommand( _sql )
-                                    : default( SqlCommand );
+                                    : default;
                             }
-
                             case Provider.Excel:
                             case Provider.CSV:
                             case Provider.Access:
@@ -350,7 +340,7 @@ namespace BudgetFramework
                             {
                                 return !string.IsNullOrEmpty( _sql )
                                     ? new OleDbCommand( _sql )
-                                    : default( OleDbCommand );
+                                    : default;
                             }
                         }
                     }
@@ -358,11 +348,11 @@ namespace BudgetFramework
                 catch( Exception ex )
                 {
                     Fail( ex );
-                    return default( DbCommand );
+                    return default;
                 }
             }
 
-            return default( DbCommand );
+            return default;
         }
 
         /// <summary>
@@ -377,23 +367,21 @@ namespace BudgetFramework
                 try
                 {
                     var _sql = SqlStatement.GetSelectStatement( );
+
                     switch( Provider )
                     {
                         case Provider.SQLite:
                         {
                             return new SQLiteCommand( _sql );
                         }
-
                         case Provider.SqlCe:
                         {
                             return new SqlCeCommand( _sql );
                         }
-
                         case Provider.SqlServer:
                         {
                             return new SqlCommand( _sql );
                         }
-
                         case Provider.Excel:
                         case Provider.CSV:
                         case Provider.Access:
@@ -401,7 +389,6 @@ namespace BudgetFramework
                         {
                             return new OleDbCommand( _sql );
                         }
-
                         default:
                         {
                             return new OleDbCommand( _sql );
@@ -411,11 +398,11 @@ namespace BudgetFramework
                 catch( Exception ex )
                 {
                     Fail( ex );
-                    return default( DbCommand );
+                    return default;
                 }
             }
 
-            return default( DbCommand );
+            return default;
         }
 
         /// <summary>

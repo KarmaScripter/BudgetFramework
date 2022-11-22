@@ -347,8 +347,8 @@ namespace BudgetFramework
                     var _data = new DataSet( );
                     var _sql = $"SELECT * FROM {sheetName}";
                     var _connectionString = $@"Provider=Microsoft.Jet.OLEDB.4.0;"
-                    + $"Data Source={Path.GetDirectoryName( fileName )} "
-                    + "Extended Properties='Text;HDR=YES;FMT=Delimited'";
+                        + $"Data Source={Path.GetDirectoryName( fileName )} "
+                        + "Extended Properties='Text;HDR=YES;FMT=Delimited'";
 
                     var _connection = new OleDbConnection( _connectionString );
                     var _schema = _connection.GetOleDbSchemaTable( OleDbSchemaGuid.Tables, null );
